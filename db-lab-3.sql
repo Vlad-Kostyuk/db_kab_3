@@ -89,17 +89,17 @@ CREATE TABLE IF NOT EXISTS `kostyuk_db`.`post` (
 ENGINE = InnoDB;
 
 
-INSERT INTO `preference` (`id_user`,`id_post`) VALUES 
- (1,7),
- (1,8),
- (1,9),
- (2,1),
- (3,2),
- (4,3),
- (5,1),
- (5,3),
- (7,2),
- (10,4);
+INSERT INTO `post` (`id_post`,`id_user`, `id_type_post`,`description`) VALUES 
+(1,8,1,'hellow world'),
+(2,8,1,'you can '),
+(3,8,2,NULL),
+(4,5,2,NULL),
+(5,3,1,'i see you'),
+(6,4,2,NULL),
+(7,7,1,'mars'),
+(8,7,1,'sun'),
+(9,7,1,'world'),
+(10,10,1,'okey');
 
 -- -----------------------------------------------------
 -- Table `kostyuk_db`.`user_log`
@@ -300,7 +300,7 @@ INSERT INTO `preference` (`id_user`,`id_post`) VALUES
  (5,1),
  (5,3),
  (7,2),
- (10,4);
+ (7,4);
 
 -- -----------------------------------------------------
 -- Table `kostyuk_db`.`preference_comment`
